@@ -1,5 +1,4 @@
 import random
-
 import discord
 
 
@@ -14,6 +13,7 @@ class MyClient(discord.Client):
 
         if message.content == 'ping':
             await message.channel.send('pong')
+
         if message.content[:10] == '마법의 소라고동님 ':
             await message.channel.send(random.choice(["True", "False"]))
 
